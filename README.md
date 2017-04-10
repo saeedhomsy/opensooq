@@ -42,17 +42,20 @@ environments/            contains environment-based overrides
 
 Online Site
 -------------------
-Online Site deployed on Herouko
+Online Site deployed on heroku
+<br>
 <a href='https://opensooq.herokuapp.com/backend/web/index.php'>CAN SHOW FROM HERE</a>
 
 please login with this users
-For Admin: ( To Show Duplication menue)
-1- username:saeedh password:123456
-2- username:admin  password:admin123
-
-For normal user:
-1- username:saeedh1 password:123456
-
+<strong>For Admin: ( To Show Duplication menue)</strong>
+<ul>
+<li>username:saeedh password:123456</li>
+<li>username:admin  password:admin123</li>
+</ul>
+<strong>For normal user:</strong>
+<ul>
+<li>username:saeedh1 password:123456</li>
+</ul>
 
 INSTRUCTIONS
 -------------------
