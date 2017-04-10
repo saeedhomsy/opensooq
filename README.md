@@ -47,14 +47,15 @@ Online Site deployed on heroku
 <a href='https://opensooq.herokuapp.com/backend/web/index.php'>CAN SHOW FROM HERE</a>
 
 please login with this users
+<br />
 <strong>For Admin: ( To Show Duplication menue)</strong>
 <ul>
-<li>username:saeedh password:123456</li>
-<li>username:admin  password:admin123</li>
+<li>username : saeedh   ,password : 123456</li>
+<li>username : admin    ,password : admin123</li>
 </ul>
 <strong>For normal user:</strong>
 <ul>
-<li>username:saeedh1 password:123456</li>
+<li>username : saeedh1  ,password : 123456</li>
 </ul>
 
 INSTRUCTIONS
