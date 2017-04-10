@@ -40,6 +40,25 @@ vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
 
+```
+Online Site
+-------------------
+Online Site deployed on Herouko
+<a href='https://opensooq.herokuapp.com/backend/web/index.php'>CAN SHOW FROM HERE</a>
+
+please login with this users
+For Admin: ( To Show Duplication menue)
+1- username:saeedh password:123456
+2- username:admin  password:admin123
+
+For normal user:
+1- username:saeedh1 password:123456
+
+```
+
+
+
+```
 INSTRUCTIONS
 -------------------
 <ol>
@@ -51,7 +70,8 @@ INSTRUCTIONS
 You can add new user by click on sign up or sign in with this users (saeedh with password 123456) OR (admin with password admin123)
 </li>
 <li>
-You can change any user to Admin by change user table in data base and add IsAdmin field to true
+<strong>You can change any user to Admin by change user table in data base and add IsAdmin field to true
+</strong>
 </li>
-
 </ol>
+```
