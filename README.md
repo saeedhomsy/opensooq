@@ -40,9 +40,9 @@ vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
 
-```
 Online Site
 -------------------
+```
 Online Site deployed on Herouko
 <a href='https://opensooq.herokuapp.com/backend/web/index.php'>CAN SHOW FROM HERE</a>
 
@@ -56,11 +56,9 @@ For normal user:
 
 ```
 
-
-
-```
 INSTRUCTIONS
 -------------------
+```
 <ol>
 <li>Clone this repo or download it</li>
 <li>Add the folder to localhost</li>
