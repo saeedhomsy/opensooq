@@ -39,3 +39,19 @@ frontend
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
+
+INSTRUCTIONS
+-------------------
+<ol>
+<li>Clone this repo or download it</li>
+<li>Add the folder to localhost</li>
+<li>In this repo you can find database in db/smalltest.sql</li>
+<li>Run script to create database with data</li>
+<li>
+You can add new user by click on sign up or sign in with this users (saeedh with password 123456) OR (admin with password admin123)
+</li>
+<li>
+You can change any user to Admin by change user table in data base and add IsAdmin field to true
+</li>
+
+</ol>
