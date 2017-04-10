@@ -42,7 +42,6 @@ environments/            contains environment-based overrides
 
 Online Site
 -------------------
-```
 Online Site deployed on Herouko
 <a href='https://opensooq.herokuapp.com/backend/web/index.php'>CAN SHOW FROM HERE</a>
 
@@ -54,11 +53,9 @@ For Admin: ( To Show Duplication menue)
 For normal user:
 1- username:saeedh1 password:123456
 
-```
 
 INSTRUCTIONS
 -------------------
-```
 <ol>
 <li>Clone this repo or download it</li>
 <li>Add the folder to localhost</li>
@@ -68,8 +65,7 @@ INSTRUCTIONS
 You can add new user by click on sign up or sign in with this users (saeedh with password 123456) OR (admin with password admin123)
 </li>
 <li>
-<strong>You can change any user to Admin by change user table in data base and add IsAdmin field to true
-</strong>
+You can change any user to Admin by change user table in data base and add IsAdmin field to true
+
 </li>
 </ol>
-```
