@@ -118,3 +118,726 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1491715381.531
     'REQUEST_TIME' => 1491715381
 ]
+2017-04-10 14:47:22 [127.0.0.1][5][3cui5476prsitq3vjp4j66k786][error][Error] Error: Call to undefined function frontend\controllers\render() in /var/www/html/advanced/frontend/controllers/SiteController.php:157
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionSignup()
+#1 /var/www/html/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/html/advanced/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('signup', Array)
+#4 /var/www/html/advanced/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/signup', Array)
+#5 /var/www/html/advanced/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/html/advanced/frontend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-04-10 14:47:21 [127.0.0.1][5][3cui5476prsitq3vjp4j66k786][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'ZlBiRHNJV3ZVPCQHEHEILzIJIz4aHGEEHAE6cgYCPUELEg0xPhYWIA=='
+    'SignupForm' => [
+        'username' => 'asdasdasd'
+        'email' => 'asdasd@sdfsfldk.olasidoa'
+        'password' => '12345676dfgg'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CG-y1gv1UC5mYLZI78qdZYoznUjH531T\";}'
+    '_csrf-backend' => '6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g\";}'
+    '_csrf-frontend' => '2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3lFCc8_YTYAziU6rzQX6uKj7mBouM_AV\";}'
+    'advanced-backend' => '45461g1v4aguhbe8l2k1h54qn4'
+    'advanced-frontend' => '9lmdgj3ivabb2vr88ggiq8mtm3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '212'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ar;q=0.6'
+    'HTTP_COOKIE' => '_csrf=2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CG-y1gv1UC5mYLZI78qdZYoznUjH531T%22%3B%7D; _csrf-backend=6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g%22%3B%7D; _csrf-frontend=2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223lFCc8_YTYAziU6rzQX6uKj7mBouM_AV%22%3B%7D; advanced-backend=45461g1v4aguhbe8l2k1h54qn4; advanced-frontend=9lmdgj3ivabb2vr88ggiq8mtm3'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '43546'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491835641.628
+    'REQUEST_TIME' => 1491835641
+]
+2017-04-10 14:47:31 [127.0.0.1][5][3cui5476prsitq3vjp4j66k786][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /var/www/html/advanced/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/advanced/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/advanced/vendor/yiisoft/yii2/base/ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/advanced/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/advanced/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/advanced/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('signup', Array)
+#8 /var/www/html/advanced/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/signup', Array)
+#9 /var/www/html/advanced/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/advanced/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2017-04-10 14:47:31 [127.0.0.1][5][3cui5476prsitq3vjp4j66k786][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_csrf' => '2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CG-y1gv1UC5mYLZI78qdZYoznUjH531T\";}'
+    '_csrf-backend' => '6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g\";}'
+    '_csrf-frontend' => '2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3lFCc8_YTYAziU6rzQX6uKj7mBouM_AV\";}'
+    'advanced-backend' => '45461g1v4aguhbe8l2k1h54qn4'
+    'advanced-frontend' => '3cui5476prsitq3vjp4j66k786'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/advanced/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ar;q=0.6'
+    'HTTP_COOKIE' => '_csrf=2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CG-y1gv1UC5mYLZI78qdZYoznUjH531T%22%3B%7D; _csrf-backend=6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g%22%3B%7D; _csrf-frontend=2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223lFCc8_YTYAziU6rzQX6uKj7mBouM_AV%22%3B%7D; advanced-backend=45461g1v4aguhbe8l2k1h54qn4; advanced-frontend=3cui5476prsitq3vjp4j66k786'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '43692'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491835651.516
+    'REQUEST_TIME' => 1491835651
+]
+2017-04-10 14:50:10 [127.0.0.1][6][5k8dchd6m434sqnc8dudoju9e5][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: /var/www/html/advanced/frontend/views/backend/index.php in /var/www/html/advanced/vendor/yiisoft/yii2/base/View.php:229
+Stack trace:
+#0 /var/www/html/advanced/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/a...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('/backend/index....', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/html/advanced/frontend/controllers/SiteController.php(157): yii\base\Controller->render('/backend/index....')
+#3 [internal function]: frontend\controllers\SiteController->actionSignup()
+#4 /var/www/html/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/html/advanced/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('signup', Array)
+#7 /var/www/html/advanced/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/signup', Array)
+#8 /var/www/html/advanced/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/advanced/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2017-04-10 14:50:09 [127.0.0.1][6][5k8dchd6m434sqnc8dudoju9e5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'bzEzbC5xbVhcXXUvTUkyATtochZHJFsqFWBrWls6B28Cc1wZYy4sDg=='
+    'SignupForm' => [
+        'username' => 'asdasd'
+        'email' => 'asdasd@sdfsfldkasdasd.olasidoa'
+        'password' => '1234567890'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CG-y1gv1UC5mYLZI78qdZYoznUjH531T\";}'
+    '_csrf-backend' => '6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g\";}'
+    '_csrf-frontend' => '2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3lFCc8_YTYAziU6rzQX6uKj7mBouM_AV\";}'
+    'advanced-backend' => '45461g1v4aguhbe8l2k1h54qn4'
+    'advanced-frontend' => '1qhkfi5g30v5vp25bjtm64qlt7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 6
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '213'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ar;q=0.6'
+    'HTTP_COOKIE' => '_csrf=2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CG-y1gv1UC5mYLZI78qdZYoznUjH531T%22%3B%7D; _csrf-backend=6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g%22%3B%7D; _csrf-frontend=2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223lFCc8_YTYAziU6rzQX6uKj7mBouM_AV%22%3B%7D; advanced-backend=45461g1v4aguhbe8l2k1h54qn4; advanced-frontend=1qhkfi5g30v5vp25bjtm64qlt7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '46270'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491835809.315
+    'REQUEST_TIME' => 1491835809
+]
+2017-04-10 14:50:28 [127.0.0.1][6][5k8dchd6m434sqnc8dudoju9e5][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /var/www/html/advanced/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/advanced/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/advanced/vendor/yiisoft/yii2/base/ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/advanced/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/advanced/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/advanced/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('signup', Array)
+#8 /var/www/html/advanced/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/signup', Array)
+#9 /var/www/html/advanced/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/advanced/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2017-04-10 14:50:27 [127.0.0.1][6][5k8dchd6m434sqnc8dudoju9e5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_csrf' => '2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CG-y1gv1UC5mYLZI78qdZYoznUjH531T\";}'
+    '_csrf-backend' => '6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g\";}'
+    '_csrf-frontend' => '2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3lFCc8_YTYAziU6rzQX6uKj7mBouM_AV\";}'
+    'advanced-backend' => '45461g1v4aguhbe8l2k1h54qn4'
+    'advanced-frontend' => '5k8dchd6m434sqnc8dudoju9e5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 6
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/advanced/frontend/web/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ar;q=0.6'
+    'HTTP_COOKIE' => '_csrf=2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CG-y1gv1UC5mYLZI78qdZYoznUjH531T%22%3B%7D; _csrf-backend=6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g%22%3B%7D; _csrf-frontend=2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223lFCc8_YTYAziU6rzQX6uKj7mBouM_AV%22%3B%7D; advanced-backend=45461g1v4aguhbe8l2k1h54qn4; advanced-frontend=5k8dchd6m434sqnc8dudoju9e5'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '46468'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491835827.989
+    'REQUEST_TIME' => 1491835827
+]
+2017-04-10 14:51:11 [127.0.0.1][7][9sfkf4psmrm0bi396kpatic5o4][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: /var/www/html/advanced/frontend/views/site/backend\web\index.php in /var/www/html/advanced/vendor/yiisoft/yii2/base/View.php:229
+Stack trace:
+#0 /var/www/html/advanced/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/a...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('backend\\web\\ind...', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/html/advanced/frontend/controllers/SiteController.php(157): yii\base\Controller->render('backend\\web\\ind...')
+#3 [internal function]: frontend\controllers\SiteController->actionSignup()
+#4 /var/www/html/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/html/advanced/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('signup', Array)
+#7 /var/www/html/advanced/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/signup', Array)
+#8 /var/www/html/advanced/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/advanced/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2017-04-10 14:51:10 [127.0.0.1][7][9sfkf4psmrm0bi396kpatic5o4][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'V3ZoUE9fbmtkGi4TLGcxMgMvKSomClgZLScwZjoUBFw6NAclAgAvPQ=='
+    'SignupForm' => [
+        'username' => 'asdasdasddfgdfg345345'
+        'email' => 'saeedhasdasda@adasdads.asdad'
+        'password' => '123456789'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CG-y1gv1UC5mYLZI78qdZYoznUjH531T\";}'
+    '_csrf-backend' => '6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g\";}'
+    '_csrf-frontend' => '2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3lFCc8_YTYAziU6rzQX6uKj7mBouM_AV\";}'
+    'advanced-backend' => '45461g1v4aguhbe8l2k1h54qn4'
+    'advanced-frontend' => 'oukopvfkpb6lmguskh8ipasku5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 7
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '225'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ar;q=0.6'
+    'HTTP_COOKIE' => '_csrf=2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CG-y1gv1UC5mYLZI78qdZYoznUjH531T%22%3B%7D; _csrf-backend=6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g%22%3B%7D; _csrf-frontend=2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223lFCc8_YTYAziU6rzQX6uKj7mBouM_AV%22%3B%7D; advanced-backend=45461g1v4aguhbe8l2k1h54qn4; advanced-frontend=oukopvfkpb6lmguskh8ipasku5'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '47634'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491835870.179
+    'REQUEST_TIME' => 1491835870
+]
+2017-04-10 14:52:13 [127.0.0.1][8][lhsa1290frkdaal7hkbtlfeua4][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: /var/www/html/advanced/frontend/views/site/\backend\web\index.php in /var/www/html/advanced/vendor/yiisoft/yii2/base/View.php:229
+Stack trace:
+#0 /var/www/html/advanced/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/a...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('\\backend\\web\\in...', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/html/advanced/frontend/controllers/SiteController.php(157): yii\base\Controller->render('\\backend\\web\\in...')
+#3 [internal function]: frontend\controllers\SiteController->actionSignup()
+#4 /var/www/html/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/html/advanced/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('signup', Array)
+#7 /var/www/html/advanced/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/signup', Array)
+#8 /var/www/html/advanced/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/advanced/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2017-04-10 14:52:13 [127.0.0.1][8][lhsa1290frkdaal7hkbtlfeua4][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'WmVoVjAuaGNpCS4VUxY3Og48KSxZe14RIDQwYEVlAlQ3JwcjfXEpNQ=='
+    'SignupForm' => [
+        'username' => 'sfs456f4sd6f5'
+        'email' => 'sdfsdf654@asdasd.asd'
+        'password' => '123456789'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CG-y1gv1UC5mYLZI78qdZYoznUjH531T\";}'
+    '_csrf-backend' => '6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g\";}'
+    '_csrf-frontend' => '2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3lFCc8_YTYAziU6rzQX6uKj7mBouM_AV\";}'
+    'advanced-backend' => '45461g1v4aguhbe8l2k1h54qn4'
+    'advanced-frontend' => '0ghgjpdf731u4tddrsnms8g6o1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 8
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '209'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ar;q=0.6'
+    'HTTP_COOKIE' => '_csrf=2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CG-y1gv1UC5mYLZI78qdZYoznUjH531T%22%3B%7D; _csrf-backend=6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g%22%3B%7D; _csrf-frontend=2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223lFCc8_YTYAziU6rzQX6uKj7mBouM_AV%22%3B%7D; advanced-backend=45461g1v4aguhbe8l2k1h54qn4; advanced-frontend=0ghgjpdf731u4tddrsnms8g6o1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '48980'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491835933.074
+    'REQUEST_TIME' => 1491835933
+]
+2017-04-10 14:53:08 [127.0.0.1][8][lhsa1290frkdaal7hkbtlfeua4][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /var/www/html/advanced/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/advanced/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/advanced/vendor/yiisoft/yii2/base/ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/advanced/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/advanced/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/advanced/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('signup', Array)
+#8 /var/www/html/advanced/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/signup', Array)
+#9 /var/www/html/advanced/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/advanced/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2017-04-10 14:53:08 [127.0.0.1][8][lhsa1290frkdaal7hkbtlfeua4][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_csrf' => '2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CG-y1gv1UC5mYLZI78qdZYoznUjH531T\";}'
+    '_csrf-backend' => '6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g\";}'
+    '_csrf-frontend' => '2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3lFCc8_YTYAziU6rzQX6uKj7mBouM_AV\";}'
+    'advanced-backend' => '45461g1v4aguhbe8l2k1h54qn4'
+    'advanced-frontend' => 'lhsa1290frkdaal7hkbtlfeua4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 8
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/advanced/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ar;q=0.6'
+    'HTTP_COOKIE' => '_csrf=2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CG-y1gv1UC5mYLZI78qdZYoznUjH531T%22%3B%7D; _csrf-backend=6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g%22%3B%7D; _csrf-frontend=2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223lFCc8_YTYAziU6rzQX6uKj7mBouM_AV%22%3B%7D; advanced-backend=45461g1v4aguhbe8l2k1h54qn4; advanced-frontend=lhsa1290frkdaal7hkbtlfeua4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50290'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491835988.752
+    'REQUEST_TIME' => 1491835988
+]
+2017-04-10 14:53:31 [127.0.0.1][9][9qeso26iqu7ahn2lmp743jd6j4][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: /var/www/html/advanced/frontend/views/site/../../backend/web/index.php in /var/www/html/advanced/vendor/yiisoft/yii2/base/View.php:229
+Stack trace:
+#0 /var/www/html/advanced/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/a...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('../../backend/w...', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/html/advanced/frontend/controllers/SiteController.php(157): yii\base\Controller->render('../../backend/w...')
+#3 [internal function]: frontend\controllers\SiteController->actionSignup()
+#4 /var/www/html/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/html/advanced/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('signup', Array)
+#7 /var/www/html/advanced/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/signup', Array)
+#8 /var/www/html/advanced/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/advanced/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2017-04-10 14:53:30 [127.0.0.1][9][9qeso26iqu7ahn2lmp743jd6j4][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'OGF2aUtYVkcLDTAqKGAJHmw4NxMiDWA1QjAuXz4TPHBVIxkcBgcXEQ=='
+    'SignupForm' => [
+        'username' => 'sdafsdfsdfsdfsadfsdaf'
+        'email' => 'saeedhsdfaasdfsadfsdaf@olije938.sdfosjf9ur34290'
+        'password' => '1234567890'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CG-y1gv1UC5mYLZI78qdZYoznUjH531T\";}'
+    '_csrf-backend' => '6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g\";}'
+    '_csrf-frontend' => '2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3lFCc8_YTYAziU6rzQX6uKj7mBouM_AV\";}'
+    'advanced-backend' => '45461g1v4aguhbe8l2k1h54qn4'
+    'advanced-frontend' => '2fpv1cnfkfvl3t2ftag1ra5n60'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 9
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '245'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ar;q=0.6'
+    'HTTP_COOKIE' => '_csrf=2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CG-y1gv1UC5mYLZI78qdZYoznUjH531T%22%3B%7D; _csrf-backend=6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g%22%3B%7D; _csrf-frontend=2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223lFCc8_YTYAziU6rzQX6uKj7mBouM_AV%22%3B%7D; advanced-backend=45461g1v4aguhbe8l2k1h54qn4; advanced-frontend=2fpv1cnfkfvl3t2ftag1ra5n60'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '51064'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491836010.523
+    'REQUEST_TIME' => 1491836010
+]
+2017-04-10 14:55:00 [127.0.0.1][9][9qeso26iqu7ahn2lmp743jd6j4][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /var/www/html/advanced/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/advanced/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/advanced/vendor/yiisoft/yii2/base/ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/advanced/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/advanced/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/advanced/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('signup', Array)
+#8 /var/www/html/advanced/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/signup', Array)
+#9 /var/www/html/advanced/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/advanced/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2017-04-10 14:55:00 [127.0.0.1][9][9qeso26iqu7ahn2lmp743jd6j4][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_csrf' => '2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CG-y1gv1UC5mYLZI78qdZYoznUjH531T\";}'
+    '_csrf-backend' => '6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g\";}'
+    '_csrf-frontend' => '2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3lFCc8_YTYAziU6rzQX6uKj7mBouM_AV\";}'
+    'advanced-backend' => '45461g1v4aguhbe8l2k1h54qn4'
+    'advanced-frontend' => '9qeso26iqu7ahn2lmp743jd6j4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 9
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/advanced/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ar;q=0.6'
+    'HTTP_COOKIE' => '_csrf=2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CG-y1gv1UC5mYLZI78qdZYoznUjH531T%22%3B%7D; _csrf-backend=6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g%22%3B%7D; _csrf-frontend=2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223lFCc8_YTYAziU6rzQX6uKj7mBouM_AV%22%3B%7D; advanced-backend=45461g1v4aguhbe8l2k1h54qn4; advanced-frontend=9qeso26iqu7ahn2lmp743jd6j4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '52666'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491836100.84
+    'REQUEST_TIME' => 1491836100
+]
+2017-04-10 14:57:15 [127.0.0.1][10][ft0ghra603v29jq037dkgqurb6][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /var/www/html/advanced/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/advanced/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/advanced/vendor/yiisoft/yii2/base/ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/advanced/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/advanced/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/advanced/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/advanced/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('signup', Array)
+#8 /var/www/html/advanced/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/signup', Array)
+#9 /var/www/html/advanced/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/advanced/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2017-04-10 14:57:15 [127.0.0.1][10][ft0ghra603v29jq037dkgqurb6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_csrf' => '2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CG-y1gv1UC5mYLZI78qdZYoznUjH531T\";}'
+    '_csrf-backend' => '6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g\";}'
+    '_csrf-frontend' => '2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3lFCc8_YTYAziU6rzQX6uKj7mBouM_AV\";}'
+    'advanced-frontend' => 'ft0ghra603v29jq037dkgqurb6'
+    'advanced-backend' => 'hkn4479k6mlr2p86d0744ro9c2'
+    '_identity-backend' => '8cf3d4a6266c2a0311dc6386569b34bbef93fa33182bc306a983e45af35fc9f4a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"cj0cAZZEP7leh-za6A66WoaR04Pt2YJy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 10
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/advanced/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ar;q=0.6'
+    'HTTP_COOKIE' => '_csrf=2276f2a358fd6eb3cc711177e558ba9514b902b1a7dfd5035c5370a404963e44a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CG-y1gv1UC5mYLZI78qdZYoznUjH531T%22%3B%7D; _csrf-backend=6d38bd65dd1fa99835c9f2481c0fdcf2877f61f9a65e43e0656975bac1bb3cc8a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22v5HrIO6lT_3-n8Wi3t22Lrgl3uYOwk7g%22%3B%7D; _csrf-frontend=2a7cc0d3341b8fdbb10239587ae2af08184ca5e47a36f2a142156454779f2210a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223lFCc8_YTYAziU6rzQX6uKj7mBouM_AV%22%3B%7D; advanced-frontend=ft0ghra603v29jq037dkgqurb6; advanced-backend=hkn4479k6mlr2p86d0744ro9c2; _identity-backend=8cf3d4a6266c2a0311dc6386569b34bbef93fa33182bc306a983e45af35fc9f4a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cj0cAZZEP7leh-za6A66WoaR04Pt2YJy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '54648'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491836235.592
+    'REQUEST_TIME' => 1491836235
+]
