@@ -627,7 +627,8 @@ class Connection extends Component
         if (strncmp('sqlite:@', $dsn, 8) === 0) {
             $dsn = 'sqlite:' . Yii::getAlias(substr($dsn, 7));
         }
-	  return new $pdoClass($dsn, $this->username, $this->password, $this->attributes);
+	  //return new $pdoClass($dsn, $this->username, $this->password, $this->attributes);
+        return new $pdoClass('mysql:host=sql11.freemysqlhosting.net;dbname=sql11168446', 'sql11168446', 'v1XAKgV6wH', $this->attributes);
     }
 
     /**
